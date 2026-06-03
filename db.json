@@ -2,23 +2,663 @@
   "users": [
     {
       "id": 1,
-      "name": "Alice",
-      "email": "alice@example.com"
+      "name": "Lina Haddad",
+      "username": "linah",
+      "email": "lina.haddad@example.com",
+      "phone": "+1-555-100-2001",
+      "role": "customer",
+      "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300",
+      "address": {
+        "street": "Maple St",
+        "suite": "Apt 4B",
+        "city": "Austin",
+        "zipcode": "73301"
+      },
+      "isActive": true,
+      "createdAt": "2026-01-10T09:30:00Z"
     },
     {
       "id": 2,
-      "name": "Bob",
-      "email": "bob@example.com"
+      "name": "Omar Khalil",
+      "username": "omark",
+      "email": "omar.khalil@example.com",
+      "phone": "+1-555-100-2002",
+      "role": "customer",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300",
+      "address": {
+        "street": "Cedar Ave",
+        "suite": "Suite 12",
+        "city": "Seattle",
+        "zipcode": "98101"
+      },
+      "isActive": true,
+      "createdAt": "2026-01-12T11:15:00Z"
     },
     {
       "id": 3,
-      "name": "Charlie",
-      "email": "charlie@example.com"
+      "name": "Sara Nabil",
+      "username": "saran",
+      "email": "sara.nabil@example.com",
+      "phone": "+1-555-100-2003",
+      "role": "agent",
+      "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300",
+      "address": {
+        "street": "Pearl Rd",
+        "suite": "Floor 2",
+        "city": "Miami",
+        "zipcode": "33101"
+      },
+      "isActive": true,
+      "createdAt": "2026-01-15T08:05:00Z"
     },
     {
       "id": 4,
-      "name": "David",
-      "email": "david@example.com"
+      "name": "Daniel Park",
+      "username": "dpark",
+      "email": "daniel.park@example.com",
+      "phone": "+1-555-100-2004",
+      "role": "admin",
+      "avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=300",
+      "address": {
+        "street": "Oak Lane",
+        "suite": "Apt 21",
+        "city": "Denver",
+        "zipcode": "80014"
+      },
+      "isActive": true,
+      "createdAt": "2026-01-18T16:40:00Z"
+    },
+    {
+      "id": 5,
+      "name": "Maya Ibrahim",
+      "username": "mayaib",
+      "email": "maya.ibrahim@example.com",
+      "phone": "+1-555-100-2005",
+      "role": "customer",
+      "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=300",
+      "address": {
+        "street": "River Dr",
+        "suite": "Apt 3C",
+        "city": "Chicago",
+        "zipcode": "60601"
+      },
+      "isActive": false,
+      "createdAt": "2026-01-21T13:20:00Z"
+    },
+    {
+      "id": 6,
+      "name": "Youssef Adel",
+      "username": "yad",
+      "email": "youssef.adel@example.com",
+      "phone": "+1-555-100-2006",
+      "role": "agent",
+      "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300",
+      "address": {
+        "street": "Palm Blvd",
+        "suite": "Unit 7",
+        "city": "San Diego",
+        "zipcode": "92101"
+      },
+      "isActive": true,
+      "createdAt": "2026-01-24T10:10:00Z"
+    }
+  ],
+  "productCategories": [
+    {
+      "id": 1,
+      "name": "Electronics",
+      "slug": "electronics"
+    },
+    {
+      "id": 2,
+      "name": "Home Appliances",
+      "slug": "home-appliances"
+    },
+    {
+      "id": 3,
+      "name": "Sports",
+      "slug": "sports"
+    },
+    {
+      "id": 4,
+      "name": "Furniture",
+      "slug": "furniture"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Aurora Noise-Canceling Headphones",
+      "slug": "aurora-noise-canceling-headphones",
+      "description": "Wireless over-ear headphones with active noise cancellation and 30-hour battery life.",
+      "price": 199.99,
+      "discountPercentage": 10,
+      "stock": 42,
+      "sku": "EL-AUR-1001",
+      "brand": "Aurora",
+      "categoryId": 1,
+      "rating": 4.6,
+      "thumbnail": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800",
+      "images": [
+        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=1200",
+        "https://images.unsplash.com/photo-1518444065439-e933c06ce9cd?w=1200"
+      ],
+      "tags": ["audio", "wireless", "headphones"],
+      "createdAt": "2026-02-01T09:00:00Z"
+    },
+    {
+      "id": 2,
+      "name": "Vivid 4K Smart TV 55\"",
+      "slug": "vivid-4k-smart-tv-55",
+      "description": "55-inch 4K UHD smart TV with HDR10 and built-in streaming apps.",
+      "price": 649.5,
+      "discountPercentage": 15,
+      "stock": 17,
+      "sku": "EL-VIV-2055",
+      "brand": "Vivid",
+      "categoryId": 1,
+      "rating": 4.4,
+      "thumbnail": "https://images.unsplash.com/photo-1593784991095-a205069470b6?w=800",
+      "images": [
+        "https://images.unsplash.com/photo-1593784991095-a205069470b6?w=1200",
+        "https://images.unsplash.com/photo-1461151304267-38535e780c79?w=1200"
+      ],
+      "tags": ["tv", "4k", "smart-home"],
+      "createdAt": "2026-02-02T09:00:00Z"
+    },
+    {
+      "id": 3,
+      "name": "Breeze Air Fryer XL",
+      "slug": "breeze-air-fryer-xl",
+      "description": "6.5L digital air fryer with 8 preset cooking modes.",
+      "price": 129,
+      "discountPercentage": 5,
+      "stock": 30,
+      "sku": "HA-BRZ-3300",
+      "brand": "Breeze",
+      "categoryId": 2,
+      "rating": 4.3,
+      "thumbnail": "https://images.unsplash.com/photo-1585515656973-c5f0f6f97a7a?w=800",
+      "images": [
+        "https://images.unsplash.com/photo-1585515656973-c5f0f6f97a7a?w=1200",
+        "https://images.unsplash.com/photo-1574781330855-d0db8cc6a79c?w=1200"
+      ],
+      "tags": ["kitchen", "cooking", "appliance"],
+      "createdAt": "2026-02-03T09:00:00Z"
+    },
+    {
+      "id": 4,
+      "name": "Titan Adjustable Dumbbells Set",
+      "slug": "titan-adjustable-dumbbells-set",
+      "description": "Adjustable dumbbells pair with total weight range from 5 to 52.5 lbs.",
+      "price": 289.99,
+      "discountPercentage": 12,
+      "stock": 11,
+      "sku": "SP-TIT-7710",
+      "brand": "TitanFit",
+      "categoryId": 3,
+      "rating": 4.8,
+      "thumbnail": "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=800",
+      "images": [
+        "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=1200",
+        "https://images.unsplash.com/photo-1599058917765-a780eda07a3e?w=1200"
+      ],
+      "tags": ["gym", "fitness", "weights"],
+      "createdAt": "2026-02-04T09:00:00Z"
+    },
+    {
+      "id": 5,
+      "name": "Nordic Minimal Desk",
+      "slug": "nordic-minimal-desk",
+      "description": "Solid wood desk with cable management and matte finish.",
+      "price": 359.75,
+      "discountPercentage": 8,
+      "stock": 9,
+      "sku": "FU-NOR-9901",
+      "brand": "NordicCraft",
+      "categoryId": 4,
+      "rating": 4.5,
+      "thumbnail": "https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?w=800",
+      "images": [
+        "https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?w=1200",
+        "https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=1200"
+      ],
+      "tags": ["desk", "office", "wood"],
+      "createdAt": "2026-02-05T09:00:00Z"
+    },
+    {
+      "id": 6,
+      "name": "Pulse Smartwatch S2",
+      "slug": "pulse-smartwatch-s2",
+      "description": "Fitness smartwatch with heart-rate tracking, GPS, and 7-day battery.",
+      "price": 179,
+      "discountPercentage": 7,
+      "stock": 54,
+      "sku": "EL-PLS-4020",
+      "brand": "Pulse",
+      "categoryId": 1,
+      "rating": 4.2,
+      "thumbnail": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800",
+      "images": [
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=1200",
+        "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=1200"
+      ],
+      "tags": ["wearable", "fitness", "smartwatch"],
+      "createdAt": "2026-02-06T09:00:00Z"
+    }
+  ],
+  "productReviews": [
+    {
+      "id": 1,
+      "productId": 1,
+      "userId": 2,
+      "rating": 5,
+      "comment": "Great sound and very comfortable for long sessions.",
+      "createdAt": "2026-03-01T12:00:00Z"
+    },
+    {
+      "id": 2,
+      "productId": 2,
+      "userId": 1,
+      "rating": 4,
+      "comment": "Picture quality is excellent, speakers are decent.",
+      "createdAt": "2026-03-02T12:00:00Z"
+    },
+    {
+      "id": 3,
+      "productId": 4,
+      "userId": 5,
+      "rating": 5,
+      "comment": "Perfect for home workouts and saves space.",
+      "createdAt": "2026-03-03T12:00:00Z"
+    },
+    {
+      "id": 4,
+      "productId": 6,
+      "userId": 2,
+      "rating": 3,
+      "comment": "Good features but the strap could be better.",
+      "createdAt": "2026-03-04T12:00:00Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "userId": 1,
+      "status": "delivered",
+      "total": 328.99,
+      "currency": "USD",
+      "shippingAddress": "Maple St, Austin, TX",
+      "paymentMethod": "card",
+      "createdAt": "2026-03-10T08:20:00Z"
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "status": "processing",
+      "total": 649.5,
+      "currency": "USD",
+      "shippingAddress": "Cedar Ave, Seattle, WA",
+      "paymentMethod": "paypal",
+      "createdAt": "2026-03-12T10:45:00Z"
+    },
+    {
+      "id": 3,
+      "userId": 5,
+      "status": "pending",
+      "total": 179,
+      "currency": "USD",
+      "shippingAddress": "River Dr, Chicago, IL",
+      "paymentMethod": "card",
+      "createdAt": "2026-03-15T15:10:00Z"
+    }
+  ],
+  "orderItems": [
+    {
+      "id": 1,
+      "orderId": 1,
+      "productId": 1,
+      "quantity": 1,
+      "unitPrice": 199.99
+    },
+    {
+      "id": 2,
+      "orderId": 1,
+      "productId": 3,
+      "quantity": 1,
+      "unitPrice": 129
+    },
+    {
+      "id": 3,
+      "orderId": 2,
+      "productId": 2,
+      "quantity": 1,
+      "unitPrice": 649.5
+    },
+    {
+      "id": 4,
+      "orderId": 3,
+      "productId": 6,
+      "quantity": 1,
+      "unitPrice": 179
+    }
+  ],
+  "realEstateCategories": [
+    {
+      "id": 1,
+      "name": "Apartment",
+      "slug": "apartment"
+    },
+    {
+      "id": 2,
+      "name": "Villa",
+      "slug": "villa"
+    },
+    {
+      "id": 3,
+      "name": "Townhouse",
+      "slug": "townhouse"
+    },
+    {
+      "id": 4,
+      "name": "Office",
+      "slug": "office"
+    }
+  ],
+  "agents": [
+    {
+      "id": 1,
+      "userId": 3,
+      "licenseNumber": "FL-AG-2026-1101",
+      "experienceYears": 6,
+      "specialties": ["rentals", "luxury"],
+      "rating": 4.7,
+      "phone": "+1-555-200-1001"
+    },
+    {
+      "id": 2,
+      "userId": 6,
+      "licenseNumber": "CA-AG-2026-2204",
+      "experienceYears": 9,
+      "specialties": ["sales", "commercial"],
+      "rating": 4.9,
+      "phone": "+1-555-200-1002"
+    }
+  ],
+  "realEstates": [
+    {
+      "id": 1,
+      "title": "Modern Downtown Apartment",
+      "description": "2-bedroom apartment with city view, rooftop pool, and gym access.",
+      "categoryId": 1,
+      "type": "rent",
+      "price": 2400,
+      "currency": "USD",
+      "location": {
+        "address": "122 King St",
+        "city": "Miami",
+        "state": "FL",
+        "zipcode": "33130",
+        "lat": 25.7751,
+        "lng": -80.2105
+      },
+      "details": {
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "areaSqFt": 1100,
+        "parking": 1,
+        "yearBuilt": 2019
+      },
+      "amenities": ["pool", "gym", "balcony", "pet-friendly"],
+      "images": [
+        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1200",
+        "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1200",
+        "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=1200"
+      ],
+      "agentId": 1,
+      "isFeatured": true,
+      "status": "available",
+      "createdAt": "2026-02-20T08:00:00Z"
+    },
+    {
+      "id": 2,
+      "title": "Coastal Luxury Villa",
+      "description": "5-bedroom villa with private pool and ocean-front terrace.",
+      "categoryId": 2,
+      "type": "sale",
+      "price": 1450000,
+      "currency": "USD",
+      "location": {
+        "address": "44 Ocean Crest",
+        "city": "San Diego",
+        "state": "CA",
+        "zipcode": "92037",
+        "lat": 32.8328,
+        "lng": -117.2713
+      },
+      "details": {
+        "bedrooms": 5,
+        "bathrooms": 4,
+        "areaSqFt": 4200,
+        "parking": 2,
+        "yearBuilt": 2021
+      },
+      "amenities": ["pool", "garden", "smart-home", "security"],
+      "images": [
+        "https://images.unsplash.com/photo-1613977257365-aaae5a9817ff?w=1200",
+        "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1200",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200"
+      ],
+      "agentId": 2,
+      "isFeatured": true,
+      "status": "available",
+      "createdAt": "2026-02-22T09:15:00Z"
+    },
+    {
+      "id": 3,
+      "title": "Suburban Family Townhouse",
+      "description": "3-bedroom townhouse close to schools and parks.",
+      "categoryId": 3,
+      "type": "sale",
+      "price": 540000,
+      "currency": "USD",
+      "location": {
+        "address": "78 Pine Meadow",
+        "city": "Austin",
+        "state": "TX",
+        "zipcode": "78704",
+        "lat": 30.2412,
+        "lng": -97.7664
+      },
+      "details": {
+        "bedrooms": 3,
+        "bathrooms": 3,
+        "areaSqFt": 1950,
+        "parking": 2,
+        "yearBuilt": 2016
+      },
+      "amenities": ["garage", "backyard", "laundry room"],
+      "images": [
+        "https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200",
+        "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=1200"
+      ],
+      "agentId": 1,
+      "isFeatured": false,
+      "status": "available",
+      "createdAt": "2026-02-25T11:30:00Z"
+    },
+    {
+      "id": 4,
+      "title": "City Center Office Space",
+      "description": "Open-plan office with meeting rooms and high-speed internet.",
+      "categoryId": 4,
+      "type": "rent",
+      "price": 6200,
+      "currency": "USD",
+      "location": {
+        "address": "901 Market St",
+        "city": "Seattle",
+        "state": "WA",
+        "zipcode": "98104",
+        "lat": 47.6036,
+        "lng": -122.3305
+      },
+      "details": {
+        "bedrooms": 0,
+        "bathrooms": 2,
+        "areaSqFt": 3100,
+        "parking": 4,
+        "yearBuilt": 2014
+      },
+      "amenities": ["meeting rooms", "security", "elevator"],
+      "images": [
+        "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=1200",
+        "https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1200"
+      ],
+      "agentId": 2,
+      "isFeatured": false,
+      "status": "rented",
+      "createdAt": "2026-02-27T13:45:00Z"
+    }
+  ],
+  "propertyReviews": [
+    {
+      "id": 1,
+      "realEstateId": 1,
+      "userId": 2,
+      "rating": 5,
+      "comment": "Amazing location and very responsive agent.",
+      "createdAt": "2026-03-05T09:00:00Z"
+    },
+    {
+      "id": 2,
+      "realEstateId": 3,
+      "userId": 1,
+      "rating": 4,
+      "comment": "Nice neighborhood and good value.",
+      "createdAt": "2026-03-06T10:30:00Z"
+    },
+    {
+      "id": 3,
+      "realEstateId": 2,
+      "userId": 5,
+      "rating": 5,
+      "comment": "Luxury at its best with stunning views.",
+      "createdAt": "2026-03-07T12:15:00Z"
+    }
+  ],
+  "inquiries": [
+    {
+      "id": 1,
+      "realEstateId": 1,
+      "userId": 1,
+      "agentId": 1,
+      "message": "Is this apartment available for move-in next month?",
+      "contactPhone": "+1-555-100-2001",
+      "status": "new",
+      "createdAt": "2026-03-10T14:00:00Z"
+    },
+    {
+      "id": 2,
+      "realEstateId": 2,
+      "userId": 2,
+      "agentId": 2,
+      "message": "Can I schedule a viewing this weekend?",
+      "contactPhone": "+1-555-100-2002",
+      "status": "contacted",
+      "createdAt": "2026-03-11T16:25:00Z"
+    },
+    {
+      "id": 3,
+      "realEstateId": 3,
+      "userId": 5,
+      "agentId": 1,
+      "message": "Is there room for price negotiation?",
+      "contactPhone": "+1-555-100-2005",
+      "status": "closed",
+      "createdAt": "2026-03-12T09:50:00Z"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "userId": 1,
+      "title": "How to choose the right headphones",
+      "body": "I compared over-ear and in-ear options. Here are my top tips.",
+      "tags": ["audio", "shopping"],
+      "published": true,
+      "createdAt": "2026-03-01T08:00:00Z"
+    },
+    {
+      "id": 2,
+      "userId": 3,
+      "title": "5 Things to check before renting an apartment",
+      "body": "Always verify building amenities, lease terms, and maintenance policy.",
+      "tags": ["real-estate", "rent"],
+      "published": true,
+      "createdAt": "2026-03-02T08:30:00Z"
+    },
+    {
+      "id": 3,
+      "userId": 2,
+      "title": "Setting up a home workout corner",
+      "body": "Compact equipment can transform a small space into a gym.",
+      "tags": ["fitness", "home"],
+      "published": false,
+      "createdAt": "2026-03-03T09:10:00Z"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "postId": 1,
+      "userId": 2,
+      "body": "Very useful comparison, thanks!",
+      "createdAt": "2026-03-01T10:20:00Z"
+    },
+    {
+      "id": 2,
+      "postId": 2,
+      "userId": 1,
+      "body": "Great checklist for first-time renters.",
+      "createdAt": "2026-03-02T11:45:00Z"
+    },
+    {
+      "id": 3,
+      "postId": 2,
+      "userId": 5,
+      "body": "Can you share a template for viewing questions?",
+      "createdAt": "2026-03-02T12:15:00Z"
+    }
+  ],
+  "todos": [
+    {
+      "id": 1,
+      "userId": 1,
+      "title": "Create first product via API",
+      "completed": true,
+      "priority": "medium"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "title": "Update user profile endpoint",
+      "completed": false,
+      "priority": "high"
+    },
+    {
+      "id": 3,
+      "userId": 2,
+      "title": "Delete a test comment",
+      "completed": false,
+      "priority": "low"
+    },
+    {
+      "id": 4,
+      "userId": 5,
+      "title": "Mark inquiry as closed",
+      "completed": true,
+      "priority": "medium"
     }
   ]
 }
