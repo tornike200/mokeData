@@ -1,4 +1,8 @@
 {
+  "parking_barrier": {
+    "name": "kutaisi",
+     "status": "0"
+  },
   "users": [
     {
       "id": 1,
